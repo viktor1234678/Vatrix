@@ -191,7 +191,7 @@ public:
     const int max_rotate = cent_x + rotate_square / 2;
 
     // The square to display is within the visible area.
-    const int display_square = min(canvas()->width(), canvas()->height()) * 5;
+    const int display_square = min(canvas()->width(), canvas()->height()) * 0.7;
     const int min_display = cent_x - display_square / 2;
     const int max_display = cent_x + display_square / 2;
 
@@ -764,7 +764,7 @@ public:
     barHeights_ = new int[numBars_];
     barMeans_ = new int[numBars_];
     barFreqs_ = new int[numBars_];
-    heightGreen_  = height_*4/12;
+    heightGreen_  = height_*0/12;
     heightYellow_ = height_*8/12;
     heightOrange_ = height_*10/12;
     heightRed_    = height_*12/12;
