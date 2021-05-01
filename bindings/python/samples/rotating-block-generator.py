@@ -23,7 +23,7 @@ class RotatingBlockGenerator(SampleBase):
         cent_x = self.matrix.width / 2
         cent_y = self.matrix.height / 2
 
-        rotate_square = min(self.matrix.width, self.matrix.height) * 1.41
+        rotate_square = min(self.matrix.width, self.matrix.height) * 5
         min_rotate = cent_x - rotate_square / 2
         max_rotate = cent_x + rotate_square / 2
 
