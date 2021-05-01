@@ -191,7 +191,7 @@ public:
     const int max_rotate = cent_x + rotate_square / 2;
 
     // The square to display is within the visible area.
-    const int display_square = min(canvas()->width(), canvas()->height()) * 0.7;
+    const int display_square = min(canvas()->width(), canvas()->height()) * 5;
     const int min_display = cent_x - display_square / 2;
     const int max_display = cent_x + display_square / 2;
 
