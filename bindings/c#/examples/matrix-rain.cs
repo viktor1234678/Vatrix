@@ -8,8 +8,8 @@ namespace matrix_rain
 {
     class Program
     {
-        const int MAX_HEIGHT = 16;
-        const int COLOR_STEP = 15;
+        const int MAX_HEIGHT = 1;
+        const int COLOR_STEP = 12;
         const int FRAME_STEP = 1;
 
         static int Main(string[] args)
