@@ -19,7 +19,7 @@ namespace minimal_example
                         canvas.SetPixel(x, y, new Color(i & 0xff, x, y));
                     }
                 }
-                canvas.DrawCircle(canvas.Width / 2, canvas.Height / 2, 6, new Color(0, 0, 255));
+                canvas.DrawCircle(canvas.Width / 2, canvas.Height / 2, 6, new Color(0, 255, 255));
                 canvas.DrawLine(canvas.Width / 2 - 3, canvas.Height / 2 - 3, canvas.Width / 2 + 3, canvas.Height / 2 + 3, new Color(0, 0, 255));
                 canvas.DrawLine(canvas.Width / 2 - 3, canvas.Height / 2 + 3, canvas.Width / 2 + 3, canvas.Height / 2 - 3, new Color(0, 0, 255));
 
