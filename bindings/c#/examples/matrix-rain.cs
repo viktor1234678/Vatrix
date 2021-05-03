@@ -57,7 +57,7 @@ namespace matrix_rain
 
                         for (var i=0; i< MAX_HEIGHT; i++)
                         {
-                            canvas.SetPixel(point.x, point.y - i, new Color(0, 255 - i * COLOR_STEP, 0));
+                            canvas.SetPixel(point.x, point.y - i, new Color(217, 0 - i * COLOR_STEP, 255));
                         }
                     }
                 }
