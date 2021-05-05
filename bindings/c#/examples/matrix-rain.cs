@@ -42,7 +42,7 @@ namespace matrix_rain
                 }
 
                 canvas.Clear();
-
+                canvas.SetPixel(0,0);
                 foreach (var point in points)
                 {
                     if (!point.recycled)
