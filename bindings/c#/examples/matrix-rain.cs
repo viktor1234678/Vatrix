@@ -45,7 +45,7 @@ namespace matrix_rain
 
                 foreach (var point in points)
                 {
-                    canvas.SetPixel(new Point(rnd.Next(0, 63), 0, new Color(66, 66, 66)));
+                    canvas.SetPixel(0, 0, new Color(66, 66, 66));
                     if (!point.recycled)
                     {
                         point.y++;
