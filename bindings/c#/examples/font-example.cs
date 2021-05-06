@@ -22,7 +22,7 @@ namespace font_example
             var canvas = matrix.CreateOffscreenCanvas();
             var font = new RGBLedFont(args[0]);
 
-            canvas.DrawText(font, 1, 6, new Color(0, 255, 0), "hALLOO");
+            canvas.DrawText(font, 1, 6, new Color(0, 255, 0), text);
             matrix.SwapOnVsync(canvas);
 
             while (!Console.KeyAvailable)
