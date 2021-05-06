@@ -14,6 +14,7 @@ all: $(CSHARP_LIB)
 	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:matrix-rain.exe matrix-rain.cs
 	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:font-example.exe font-example.cs
 	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:pulsing-brightness.exe pulsing-brightness.cs
+	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:Pokemon.exe Pokemon.cs
 
 minimal-example.exe: $(CSHARP_LIB)
 	cp $(RGB_LIBRARY) $(RGB_LIBRARY_NAME).so
@@ -34,6 +35,12 @@ pulsing-brightness.exe: $(CSHARP_LIB)
 	cp $(RGB_LIBRARY) $(RGB_LIBRARY_NAME).so
 	cp $(CSHARP_LIBRARY) $(CSHARP_LIB)
 	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:pulsing-brightness.exe pulsing-brightness.cs
+
+Pokemon.exe: $(CSHARP_LIB)
+	cp $(RGB_LIBRARY) $(RGB_LIBRARY_NAME).so
+	cp $(CSHARP_LIBRARY) $(CSHARP_LIB)
+	$(CSHARP_COMPILER) -r:$(CSHARP_LIB) -out:Pokemon.exe Pokemon.exe
+
 
 $(CSHARP_LIB) :
 	$(MAKE) -C $(CSHARP_LIBDIR)
