@@ -19,14 +19,14 @@ namespace Pokemon
             
             int text = 1;
             if (args.Length > 1)            
-                text = args[1];
+                ToString(text) = args[1];
             
 
             var matrix = new RGBLedMatrix(32, 2, 1);
             var canvas = matrix.CreateOffscreenCanvas();
             var font = new RGBLedFont(args[0]);
 
-            canvas.DrawText(font, 1, 6, new Color(0, 255, 0), text);
+            canvas.DrawText(font, 1, 6, new Color(0, 255, 0), ToString(text));
             matrix.SwapOnVsync(canvas);
 
             while (!Console.KeyAvailable)
