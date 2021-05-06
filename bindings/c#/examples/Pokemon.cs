@@ -17,7 +17,7 @@ namespace Pokemon
             }
 
             
-            int text = "Hello World!";
+            int text = 1;
             if (args.Length > 1)            
                 text = args[1];
             
