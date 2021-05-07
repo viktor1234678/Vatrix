@@ -10,7 +10,7 @@ namespace matrix_rain
     {
         const int MAX_HEIGHT = 12;
         const int COLOR_STEP = 12;
-        const int FRAME_STEP = 3;
+        const int FRAME_STEP = 1;
 
         static int Main(string[] args)
         {
@@ -58,7 +58,7 @@ namespace matrix_rain
 
                         for (var i=0; i< MAX_HEIGHT; i++)
                         {
-                            canvas.SetPixel(point.x, point.y - i, new Color(point.x - i * COLOR_STEP, point.y, 240));
+                            canvas.SetPixel(point.x, point.y - i, new Color(point.x, point.y - i * COLOR_STEP, 240));
                         }
                     }
                 }
