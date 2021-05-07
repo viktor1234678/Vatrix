@@ -87,5 +87,4 @@ namespace matrix_rain
             public bool recycled;
         }
     }
-    }
 }
