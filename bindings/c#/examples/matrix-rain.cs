@@ -8,8 +8,8 @@ namespace matrix_rain
 {
     class Program
     {
-        const int MAX_HEIGHT = 12;
-        const int COLOR_STEP = 12;
+        const int MAX_HEIGHT = 16;
+        const int COLOR_STEP = 15;
         const int FRAME_STEP = 1;
 
         static int Main(string[] args)
@@ -45,7 +45,6 @@ namespace matrix_rain
 
                 foreach (var point in points)
                 {
-                    canvas.SetPixel(0, 0, new Color(66, 66, 66));
                     if (!point.recycled)
                     {
                         point.y++;
@@ -58,7 +57,7 @@ namespace matrix_rain
 
                         for (var i=0; i< MAX_HEIGHT; i++)
                         {
-                            canvas.SetPixel(point.x, point.y - i, new Color(point.x, point.y - i * COLOR_STEP, 240));
+                            canvas.SetPixel(point.x, point.y - i, new Color(0, 255 - i * COLOR_STEP, 0));
                         }
                     }
                 }
@@ -87,5 +86,6 @@ namespace matrix_rain
             public int y;
             public bool recycled;
         }
+    }
     }
 }
