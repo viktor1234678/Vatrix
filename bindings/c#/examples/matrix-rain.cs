@@ -10,7 +10,7 @@ namespace matrix_rain
     {
         const int MAX_HEIGHT = 12;
         const int COLOR_STEP = 12;
-        const int FRAME_STEP = 1;
+        const int FRAME_STEP = 3;
 
         static int Main(string[] args)
         {
